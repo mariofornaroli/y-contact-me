@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Me Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <figure>
+                    <img src="./images/img.jpg" alt="Profile image"> 
+                </figure>
+                <div class="personal-info">
+                    <p class="name">Mark McGraw</p>
+                    <p class="description">Hi, I am Mark McGraw and I am a Frontend Developer passionate about UI and UX
+                        design.</p>
+                </div>
+                <button class="contact-me">
+                    <span>Contact me</span>
+                    <i class="fas fa-angle-up"></i>
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <p>Contact me</p>
+            </div>
+        </div>
+
+        <section class="social">
+
+            <div class="social-card linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <div class="info">
+                    <label>Linkedin</label>
+                    <p>linkedin.com/markmcgraw</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+            <div class="social-card github">
+                <i class="fab fa-github"></i>
+                <div class="info">
+                    <label>Github</label>
+                    <p>github.com/markmcgraw</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+            <div class="social-card email">
+                <i class="far fa-envelope"></i>
+                <div class="info">
+                    <label>Email</label>
+                    <p>markmcgraw@gmail.com</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        var container = document.querySelector('.container');
+        var btn = document.querySelector('.contact-me');
+
+        btn.addEventListener('click', function() {
+            /* toggle container 'opened' class */
+            container.classList.toggle('opened');
+        })
+    </script>
+
+</body>
+
+</html>
